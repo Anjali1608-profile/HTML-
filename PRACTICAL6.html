@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Department Page</title>
+<style>
+ul {
+  list-style-type: none;
+  background-color: #333;
+  overflow: hidden;
+}
+li {
+  float: left;
+  position: relative;
+}
+li a {
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+li a:hover { background-color: #111; }
+li ul {
+  display: none;
+  position: absolute;
+  background-color: #444;
+}
+li:hover ul { display: block; }
+li ul li { float: none; }
+</style>
+</head>
+<body>
+
+<h2>Department of Computer Science</h2>
+<ul>
+  <li><a href="#">Faculty</a></li>
+  <li><a href="#">Courses</a>
+    <ul>
+      <li><a href="#">HTML</a></li>
+      <li><a href="#">CSS</a></li>
+      <li><a href="#">JavaScript</a></li>
+    </ul>
+  </li>
+  <li><a href="#">Activities</a></li>
+</ul>
+
+</body>
+</html>

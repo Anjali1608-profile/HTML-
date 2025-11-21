@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Student Registration Form</title>
+<style>
+form {
+  width: 400px;
+  margin: auto;
+  border: 2px solid #888;
+  padding: 20px;
+  border-radius: 10px;
+}
+label { display:block; margin-top:10px; }
+</style>
+</head>
+<body>
+
+<h2 align="center">Student Registration Form</h2>
+
+<form>
+  <label>Name:</label>
+  <input type="text" name="name">
+
+  <label>Gender:</label>
+  <input type="radio" name="gender" value="Male"> Male
+  <input type="radio" name="gender" value="Female"> Female
+
+  <label>Course:</label>
+  <select>
+    <option>B.Sc</option>
+    <option>B.Com</option>
+    <option>B.A</option>
+  </select>
+
+  <label>Hobbies:</label>
+  <input type="checkbox"> Music
+  <input type="checkbox"> Sports
+  <input type="checkbox"> Reading
+
+  <br><br>
+  <input type="reset">
+  <input type="submit">
+</form>
+
+</body>
+</html>

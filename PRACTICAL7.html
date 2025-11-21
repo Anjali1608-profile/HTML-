@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h3>Sum and Average</h3>
+<button onclick="calc()">Enter Numbers</button>
+<p id="result"></p>
+
+<script>
+function calc(){
+  let sum=0, count=0, n;
+  do{
+    n = parseInt(prompt("Enter positive number (0 to stop):"));
+    if(n>0){ sum+=n; count++; }
+  }while(n!=0);
+  let avg = sum/count;
+  result.innerHTML = "Sum = "+sum+"<br>Average = "+avg;
+}
+</script>                                                                                                               
+<h3>Multiplication Table</h3>
+<input type="number" id="num">
+<button onclick="table()">Show Table</button>
+<p id="result"></p>
+
+<script>
+function table() {
+  let n = document.getElementById('num').value;
+  let text = "";
+  for(let i=1; i<=10; i++){
+    text += n + " × " + i + " = " + (n*i) + "<br>";
+  }
+  document.getElementById('result').innerHTML = text;
+}                                                                                                            </script>                                                                                                                  <h3>Find Largest Number</h3>
+<input id="a" placeholder="Num1"> 
+<input id="b" placeholder="Num2"> 
+<input id="c" placeholder="Num3"> 
+<button onclick="largest()">Find</button>
+<p id="out"></p>
+
+<script>
+function largest() {
+  let x = parseFloat(a.value), y = parseFloat(b.value), z = parseFloat(c.value);
+  let max = Math.max(x,y,z);
+  out.innerHTML = "Largest = " + max;
+}
+</script>                                                                                                        <h3>Factorial</h3>
+<input id="num">
+<button onclick="fact()">Calculate</button>
+<p id="res"></p>
+
+<script>
+function fact(){
+  let n = parseInt(num.value);
+  let f = 1;
+  for(let i=1;i<=n;i++){ f *= i; }
+  res.innerHTML = "Factorial = " + f;
+}
+</script>                                                                                                     </body>
+</html>
