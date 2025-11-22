@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Formatting Example</title>
+</head>
+<body bgcolor="lightyellow">
+
+<h2 style="color:blue;">Q=1</h2>
+
+<b>Bold Text</b><br>
+<i>Italic Text</i><br>
+<u>Underlined Text</u><br>
+
+<p style="color:red;">This is a colored paragraph.</p>
+
+<p style="font-size:20px; font-family:Arial;">
+This paragraph has custom font and size.
+</p>
+
+<hr>
+
+<marquee>Marquee Scrolling Text</marquee>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style="color:blue;"> Q=2</h2>
+
+
+<h3>Lists Example</h3>
+
+<ol>
+  <li>HTML</li>
+  <li>CSS</li>
+  <li>JavaScript</li>
+</ol>
+
+<ul>
+  <li>Apple</li>
+  <li>Mango</li>
+  <li>Banana</li>
+</ul>
+
+<img src="pic.jpg" width="150">
+
+<br><br>
+
+<a href="page2.html">Internal Link</a><br>
+<a href="https://google.com">External Link</a>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style="color:blue;"> Q=3</h2>
+
+
+<h2>Time Table</h2>
+
+<table border="1" cellpadding="8">
+<tr>
+  <th>Day</th><th>Subject</th><th>Time</th>
+</tr>
+<tr>
+  <td>Monday</td><td>HTML</td><td>10–11 AM</td>
+</tr>
+<tr>
+  <td>Tuesday</td><td>CSS</td><td>10–11 AM</td>
+</tr>
+</table>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<h2 style="color:blue;"> Q=4</h2>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Frames Layout</title>
+
+<style>
+body{margin:0;font-family:Arial}
+
+/* Top Frame */
+#top{
+  height:20%;
+  background:lightblue;
+  text-align:center;
+  padding:10px;
+}
+
+/* Bottom Frame (split) */
+#bottom{
+  height:80%;
+  display:flex;
+}
+
+/* Left Vertical Menu */
+#left{
+  width:25%;
+  background:#f0f0f0;
+  padding:20px;
+  border-right:2px solid #ccc;
+}
+
+#left a{
+  display:block;
+  margin:10px 0;
+  text-decoration:none;
+  color:black;
+}
+
+/* Right Content Area */
+#right{
+  width:75%;
+  padding:20px;
+}
+</style>
+
+<script>
+function load(text){
+  document.getElementById("right").innerHTML = "<h2>"+text+"</h2>";
+}
+</script>
+
+</head>
+<body>
+
+<!-- TOP SECTION -->
+<div id="top">
+  <h2>SWAMI SHRADDHANAND COLLEGE</h2>
+  <img src="logo.png" width="70">
+</div>
+
+<!-- BOTTOM SECTION -->
+<div id="bottom">
+
+  <!-- LEFT MENU -->
+  <div id="left">
+    <a href="#" onclick="load('Faculty Details')">Faculty</a>
+    <a href="#" onclick="load('Courses Offered')">Courses</a>
+    <a href="#" onclick="load('Student Activities')">Activities</a>
+  </div>
+
+  <!-- RIGHT CONTENT -->
+  <div id="right">
+    <h2>Welcome to Department  Of Chemistry Website</h2>
+  </div>
+
+</div>
+
+</body>
+</html>
+
+
+<title>Frames Layout on One Page</title>
+
+<style>
+body { margin:0; font-family:Arial; }
+
+/* Top Section */
+#top {
+  height: 20%;
+  background: lightblue;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Bottom Section */
+#bottom {
+  display: flex;
+  height: 80%;
+}
+
+/* Left Menu */
+#left {
+  width: 25%;
+  background: #f0f0f0;
+  padding: 20px;
+}
+
+/* Right Content */
+#right {
+  width: 75%;
+  padding: 20px;
+  background: white;
+  border-left: 2px solid #ccc;
+}
+a { display:block; margin:10px 0; text-decoration:none; }
+</style>
+
+<script>
+function showContent(text){
+    document.getElementById("right").innerHTML = "<h2>"+text+"</h2>";
+}
+</script>
+
+</head>
+<body>
+
+<!-- TOP PART -->
+<div id="top">
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style="color:blue;"> Q=5</h2>
+
+
+<h3>Student Registration Form</h3>
+
+<form>
+
+Name: <input type="text"><br><br>
+Gender: 
+<input type="radio" name="g">Male 
+<input type="radio" name="g">Female <br><br>
+
+Course:
+<select>
+  <option>HTML</option>
+  <option>CSS</option>
+  <option>JS</option>
+</select><br><br>
+
+Hobbies:
+<input type="checkbox">Sports
+<input type="checkbox">Music<br><br>
+
+<input type="reset">
+<input type="submit">
+
+</form>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<h2 style="color:blue;"> Q=6</h2>
+
+
+<title>Department Website</title>
+
+<style>
+body{
+  font-family: Arial;
+}
+
+/* Main Menu */
+.nav{
+  background: #333;
+  overflow: hidden;
+}
+
+.nav a{
+  float: left;
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+/* Dropdown container */
+.dropdown{
+  float: left;
+  position: relative;
+}
+
+.dropdown-content{
+  display: none;
+  position: absolute;
+  background: #f1f1f1;
+  min-width: 150px;
+}
+
+.dropdown-content a{
+  color: black;
+  display: block;
+  padding: 10px;
+}
+
+/* Show dropdown items on hover */
+.dropdown:hover .dropdown-content{
+  display: block;
+}
+
+.nav a:hover{
+  background: #575757;
+}
+</style>
+
+</head>
+<body>
+
+<h2>Department Home Page</h2>
+
+<div class="nav">
+
+  <a href="#">Home</a>
+
+  <div class="dropdown">
+    <a href="#">Faculty ▼</a>
+    <div class="dropdown-content">
+      <a href="#">Teacher 1</a>
+      <a href="#">Teacher 2</a>
+      <a href="#">Teacher 3</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Courses ▼</a>
+    <div class="dropdown-content">
+      <a href="#">HTML</a>
+      <a href="#">CSS</a>
+      <a href="#">JavaScript</a>
+    </div>
+  </div>
+
+  <div class="dropdown">
+    <a href="#">Activities ▼</a>
+    <div class="dropdown-content">
+      <a href="#">Workshops</a>
+      <a href="#">Seminars</a>
+      <a href="#">Events</a>
+    </div>
+  </div>
+
+</div>
+
+<p>Welcome to our department website!</p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<head>
+<h2 style="color:blue;"> Q=7</h2>
+
+
+<title>JS Programs</title>
+<script>
+function table(){
+ let n = document.getElementById("t1").value;
+ let out="";
+ for(let i=1;i<=10;i++)
+   out += n+" x "+i+" = "+(n*i)+"<br>";
+ document.getElementById("o1").innerHTML = out;
+}
+
+function largest(){
+ let a=+document.getElementById("l1").value;
+ let b=+document.getElementById("l2").value;
+ let c=+document.getElementById("l3").value;
+ document.getElementById("o2").innerHTML = "Largest = " + Math.max(a,b,c);
+}
+
+function fact(){
+ let n = document.getElementById("f1").value;
+ let f = 1;
+ for(let i=1;i<=n;i++) f*=i;
+ document.getElementById("o3").innerHTML = "Factorial = " + f;
+}
+
+function sumAvg(){
+ let sum=0, count=0, x;
+ do{
+   x = +prompt("Enter number (0 to stop):");
+   if(x!=0){ sum+=x; count++; }
+ }while(x!=0);
+ document.getElementById("o4").innerHTML =
+   "Sum = "+sum+"<br>Average = "+(sum/count);
+}
+</script>
+</head>
+
+<body>
+
+<h2>JavaScript Programs</h2>
+
+<!-- 1. Multiplication Table -->
+<h3>1. Multiplication Table</h3>
+<input id="t1">
+<button onclick="table()">Print</button>
+<p id="o1"></p>
+
+<!-- 2. Largest of Three Numbers -->
+<h3>2. Largest of Three Numbers</h3>
+<input id="l1" placeholder="A">
+<input id="l2" placeholder="B">
+<input id="l3" placeholder="C">
+<button onclick="largest()">Find</button>
+<p id="o2"></p>
+
+<!-- 3. Factorial -->
+<h3>3. Factorial</h3>
+<input id="f1">
+<button onclick="fact()">Find</button>
+<p id="o3"></p>
+
+<!-- 4. Sum & Average -->
+<h3>4. Sum and Average (Enter until 0)</h3>
+<button onclick="sumAvg()">Start</button>
+<p id="o4"></p>
+
+</body>
+</html>
+
+<!DOCTYPE html>
+<html>
+<body>
+<h2 style="color:blue;"> Q=8</h2>
+
+
+<form onsubmit="return validate()">
+
+Roll No: <input id="roll"><br><br>
+Name: <input id="name"><br><br>
+DOB: <input type="date" id="dob"><br><br>
+
+<input type="submit">
+
+</form>
+
+<script>
+function validate(){
+
+ let r = document.getElementById("roll").value;
+ if(r.length != 7 || isNaN(r)){
+   alert("Roll must be 7-digit number");
+   return false;
+ }
+
+ let n = document.getElementById("name").value;
+ if(!/^[A-Za-z ]+$/.test(n)){
+   alert("Name must be alphabetical");
+   return false;
+ }
+
+ let d = document.getElementById("dob").value;
+ if(d===""){
+   alert("Enter valid DOB");
+   return false;
+ }
+
+ return true;
+}
+</script>
+
+</body>
+</html>
