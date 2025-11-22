@@ -1,0 +1,125 @@
+<img src= " assets/logo.png "  alt= " https://1drv.ms/i/c/c09c568f234e79e2/IQAr-fqN-FZXTbKZTEe1IWkJAWaUriwHoMcIPdIEIqOF1-Q?e=dYyhIE " class= "logo" width="50"  height="50">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>College Website</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Top Horizontal Frame -->
+    <div class="top-frame">
+        <img src="assets/logo.png" alt="College Logo" class="logo">
+        <h1>XYZ University</h1>
+    </div>
+
+    <!-- Bottom Horizontal Frame (Split into 2 vertical frames) -->
+    <div class="bottom-container">
+        <!-- Left Vertical Frame (Navigation) -->
+        <div class="left-frame">
+            <ul>
+                <li><a href="pages/home.html" target="content-frame">Home</a></li>
+                <li><a href="pages/faculty.html" target="content-frame">Faculty</a></li>
+                <li><a href="pages/courses.html" target="content-frame">Courses</a></li>
+                <li><a href="pages/activities.html" target="content-frame">Student Activities</a></li>
+            </ul>
+        </div>
+        <!-- Right Vertical Frame (Content) -->
+        <div class="right-frame">
+            <iframe name="content-frame" src="pages/home.html"></iframe>
+        </div>
+    </div>
+</body>
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.top-frame {
+    background: #004aad;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #ccc;
+}
+
+.logo {
+    width: 50px;
+    margin-right: 10px;
+}
+
+.bottom-container {
+    display: flex;
+    height: calc(100vh - 80px);
+}
+
+.left-frame {
+    width: 20%;
+    background: #f4f4f4;
+    padding: 20px;
+    border-right: 2px solid #ccc;
+}
+
+.left-frame ul {
+    list-style: none;
+    padding: 0;
+}
+
+.left-frame ul li {
+    margin: 15px 0;
+}
+
+.left-frame a {
+    text-decoration: none;
+    color: #004aad;
+    font-weight: bold;
+}
+
+.left-frame a:hover {
+    color: #ff6600;
+}
+
+.right-frame {
+    width: 80%;
+}
+
+.right-frame iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <style>
+        body { font-family: Arial, sans-serif; padding: 20px; }
+        h2 { color: #004aad; }
+    </style>
+</head>
+<body>
+    <h2>Welcome to XYZ University</h2>
+    <p>This is the homepage. Explore the links on the left.</p>
+</body>
+
+<h2>Our Faculty</h2>
+<ul>
+    <li>Dr. John Doe - Computer Science</li>
+    <li>Dr. Jane Smith - Chemistry</li>
+</ul>
+
+<h2>Courses Offered</h2>
+<ul>
+    <li>BSc Computer Science</li>
+    <li>MSc Data Science</li>
+</ul>
+
+`activities.html`
+<h2>Student Activities</h2>
+<p>Cultural Fest, Sports, Coding Clubs.</p>
+</html>
